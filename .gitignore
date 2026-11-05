@@ -1,0 +1,4 @@
+build/
+dist/
+api_manual/
+*.class
