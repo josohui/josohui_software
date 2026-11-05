@@ -3,12 +3,22 @@
 소프트웨어 시스템 설계 체크포인트 4용 Java Swing 게임, Beta 1.0.
 화면, 게임 규칙, 플레이어 정보를 별도의 클래스로 구성했습니다.
 
-## 실행
+## 실행 — 빌드할 필요 없음
 
-Java 17 이상에서 `java -jar ssd_ip_cp4_2026f_252482_app.jar`로 제출용 JAR을 실행합니다.
-소스를 빌드하려면 JDK 17 이상이 필요합니다. PowerShell에서 프로젝트 폴더로 이동하고
-`powershell -ExecutionPolicy Bypass -File build.ps1`을 실행한 뒤 `run.bat`를 실행합니다.
-외부 라이브러리, 이미지 리소스, 네트워크 연결은 필요하지 않습니다.
+1. GitHub에서 Code → Download ZIP을 선택합니다.
+2. ZIP 전체를 압축 해제합니다.
+3. 압축을 푼 폴더의 `run.bat`를 더블클릭합니다. Windows에서 확장자가 숨겨져 있으면 `run`으로 표시됩니다.
+
+실행 JAR이 `dist/ssd_ip_cp4_2026f_252482_app.jar`에 포함되어 있습니다.
+Java 17 이상이 필요하며 JDK, PowerShell 명령 입력, 직접 컴파일은 필요하지 않습니다.
+`run.bat`만 따로 옮기지 말고 `dist` 폴더와 함께 두세요.
+외부 라이브러리와 네트워크 연결은 필요하지 않습니다.
+
+### 소스를 수정한 경우에만 다시 빌드
+
+JDK 17 이상에서 `powershell -ExecutionPolicy Bypass -File build.ps1`을 실행합니다.
+이 명령은 테스트, 실행 JAR 생성, Javadoc 생성을 수행합니다.
+일반적인 게임 실행에는 이 과정이 필요하지 않습니다.
 
 ## 규칙
 
